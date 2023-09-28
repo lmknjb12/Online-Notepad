@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script src="find.js"></script>
-    <script src="download.js"></script>
-    <script src="upload.js"></script>
+    <link rel="index.php" href="index.php">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="canonical" href="https://omonlinenotepad.com/index.html" />
+    <link rel="alternate" hreflang="ko" href="https://omonlinenotepad.com/index.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="asses/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asses/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asses/favicon-16x16.png">
+    <link rel="manifest" href="asses/site.webmanifest">
+    <meta name="naver-site-verification" content="5dc5d3bd3dbfe3db8db75d7192ca794715b6e799" />
+    <meta name="google-site-verification" content="90PwiuZylGRxF0wmlc9f08nch4EPwaURUswffB9zmXA" />
+    <meta name="description" content="Online-Write Quick and simple Using">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="google-site-verification" content="TWr8trQU3AzDX3XSk1osEPWrrxcJoOcWiotzvzXLeAQ" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4450306723443481"
      crossorigin="anonymous"></script>
@@ -11,21 +21,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>Online Notepad - Write to Online</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4450306723443481"
-     crossorigin="anonymous"></script>
-    <script
-        src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-storage-api/1.9.4/jquery.storageapi.min.js" integrity="sha512-rZXftKfJtDmBFPfxFYFjwGM3QadaGJCrOpdaOh3JPkk2wJXSghhUa7bn9CCn7R/UPW29aMuWY0JDnbZEiUYxgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4450306723443481"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body">
     <div id="gnb">
-        <div class="logo">OM Memo</div> - 
+        <div class="logo">OM Memo</div>
     </div>
     <div id="content">
         <div class="btn_area">
@@ -33,9 +37,9 @@
             <button class="btn_load" style="background-color:white;border:0"><img class="load" src="load.jpg"></button>
             <button class="btn_upload" style="background-color:white;border:0;" onclick="openTextFile()"><img src="upload.jpg" class="upload"></button>
             <button class="btn_downlaod" onclick="downLoad()" style="background-color:white;border:0;"><img src="download.jpg" class="download"></button>
-            <button class="btn_save" style="background-color:white;border:0"><img class="setting" src="setting.jpg"></button>
+            <button class="btn_reloading" onclick="reloading()" style="background-color:white;border:0"><img class="reloading" src="리로딩.jpg">
         </div>
-        <textarea id="tarea" class="tarea"></textarea>
+        <textarea onclick="auto_save" id="tarea" class="tarea"></textarea>
     </div>
     <div class="ad-banner1">
         <ins class="kakao_ad_area" style="display:none;"

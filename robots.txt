@@ -1,2 +1,3 @@
-User-agent: *Allow:/
-Sitemap: http://omonlinenotepad.com/sitemap.xml
+User-agent: *
+Allow:/
+Sitemap: https://omonlinenotepad.com/sitemap.xml

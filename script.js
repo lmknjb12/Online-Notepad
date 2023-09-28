@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.localStorage.set('memo',$('.tarea').val());
         $('.logo').text('OM Memo');
         $('.disket').attr("src", "/check.jpg")
-        setTimeout(function() { 
+        setTimeout(function(){ 
             $('.disket').attr("src", "/disket.jpg")
         }, 2000);
     });
@@ -17,8 +17,13 @@ $(document).ready(function(){
     });
     $('.tarea').keyup(function(){
         $('.logo').text('* OM Memo');
-    })
+    });
 });
+
+function reloading(){
+    $.localStorage.set('memo',$('.tarea').val());
+    window.location = window.location
+}
 
 const downLoad = () => {
     let contents = tarea.value
@@ -38,6 +43,10 @@ const downLoad = () => {
 }
 
 function openTextFile(){
+    $('.reloading').attr("src", "/리로딩2.jpg")
+    setTimeout(function(){ 
+        $('.reloading').attr("src", "/리로딩.jpg")
+    }, 2000);
     var vvangsang = document.createElement("input");
     
     vvangsang.type="file";
