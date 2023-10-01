@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://omonlinenotepad.com/sitemap.xml
