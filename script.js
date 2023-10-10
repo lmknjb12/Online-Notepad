@@ -21,7 +21,6 @@ $(document).ready(function(){
 });
 
 function reloading(){
-    $.localStorage.set('memo',$('.tarea').val());
     window.location = window.location
 }
 
